@@ -48,6 +48,21 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `record` (
+       `id` integer not null,
+        `version` integer not null,
+        `activ_description` varchar(255),
+        `ceo_name` varchar(255),
+        `company_name` varchar(255),
+        `company_type` varchar(255),
+        `email` varchar(255),
+        `phone` varchar(255),
+        `rating` varchar(255),
+        `sector` varchar(255),
+        `website` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,

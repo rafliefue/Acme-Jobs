@@ -17,6 +17,7 @@
 
 	<import resource="conversion-service.xml" />
 
+	<!-- Announcement beans -->
 
 	<bean id="announcement01" class="acme.entities.announcements.Announcement">
 		<property name="title" value="Sample announcement 01"/>
@@ -39,7 +40,30 @@
 		<property name="text" value="This is a very old announcement"/>
 	</bean>
 
-
-
+	<!-- Records beans -->
+	
+	<bean id="record01" class="acme.entities.records.Record">
+		<property name="companyName" value="Sample record 01"/>
+		<property name="sector" value="Informática"/>
+		<property name="ceoName" value="Pedro Manuel Cobos"/>
+		<property name="activDescription" value="This is the description of a sample record"/>
+		<property name="website" value="http://www.example.com"/>
+		<property name="phone" value="+34 657036241"/>
+		<property name="email" value="pedcobram@alum.us.es"/>
+		<property name="companyType" value="Inc"/>
+		<property name="rating" value="3"/>
+	</bean>
+	
+	<bean id="record02" class="acme.entities.records.Record">
+		<property name="companyName" value="Sample record 02"/>
+		<property name="sector" value="Derecho"/>
+		<property name="ceoName" value="Rafael Liebana"/>
+		<property name="activDescription" value="This is the description of a second sample record"/>
+		<property name="website" value="http://www.example.com"/>
+		<property name="phone" value="+34 123456789"/>
+		<property name="email" value="rafliefue@alum.us.es"/>
+		<property name="companyType" value="Inc"/>
+		<property name="rating" value="0"/>
+	</bean>
 
 </beans>
