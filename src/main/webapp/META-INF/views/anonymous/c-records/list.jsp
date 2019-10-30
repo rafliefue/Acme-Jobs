@@ -16,13 +16,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:list-column code="anonymous.c-record.list.label.companyName" path="companyName" width="10%"/>
-	<acme:list-column code="anonymous.c-record.list.label.sector" path="sector" width="10%"/>
-	<acme:list-column code="anonymous.c-record.list.label.ceoName" path="ceoName" width="10%"/>
-	<acme:list-column code="anonymous.c-record.list.label.activDescription" path="activDescription" width="20%"/>
-	<acme:list-column code="anonymous.c-record.list.label.website" path="website" width="10%"/>
-	<acme:list-column code="anonymous.c-record.list.label.phone" path="phone" width="10%"/>
-	<acme:list-column code="anonymous.c-record.list.label.email" path="email" width="10%"/>
-	<acme:list-column code="anonymous.c-record.list.label.companyType" path="companyType" width="10%"/>
+	<acme:list-column code="anonymous.c-record.list.label.companyName" path="companyName" width="25%"/>
+	<acme:list-column code="anonymous.c-record.list.label.sector" path="sector" width="25%"/>
+	<acme:list-column code="anonymous.c-record.list.label.activDescription" path="activDescription" width="40%"/>
 	<acme:list-column code="anonymous.c-record.list.label.rating" path="rating" width="10%"/>
 </acme:form>

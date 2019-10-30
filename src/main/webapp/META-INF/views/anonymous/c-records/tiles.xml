@@ -18,8 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/user-account/form" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/user-account/form.jsp" />
+	<definition name="anonymous/c-records/form" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/c-records/form.jsp" />
+	</definition>
+	
+	<definition name="anonymous/c-records/list" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/c-records/list.jsp" />
 	</definition>
 
 </tiles-definitions>
