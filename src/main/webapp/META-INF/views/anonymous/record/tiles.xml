@@ -18,12 +18,12 @@
 
 <tiles-definitions>
 
-	<definition name="anonymous/CRecord/list" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/CRecord/list.jsp" />
-	</definition>
+		<definition name="anonymous/record/list" extends="master">
+			<put-attribute name="body" type="template" value="../anonymous/record/list.jsp" />
+		</definition>
 
-	<definition name="anonymous/CRecord/form" extends="master">
-		<put-attribute name="body" type="template" value="../anonymous/CRecord/form.jsp" />
-	</definition>
+		<definition name="anonymous/record/form" extends="master">
+			<put-attribute name="body" type="template" value="../anonymous/record/form.jsp" />
+		</definition>
 	
 </tiles-definitions>

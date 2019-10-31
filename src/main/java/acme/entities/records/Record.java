@@ -1,5 +1,5 @@
 
-package acme.entities.CRecords;
+package acme.entities.records;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
@@ -14,7 +14,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class CRecord extends DomainEntity {
+public class Record extends DomainEntity {
 
 	//Identificador
 
@@ -23,16 +23,16 @@ public class CRecord extends DomainEntity {
 	//Atributos
 
 	@NotBlank
-	private String				companyName;
+	private String				companyname;
 
 	@NotBlank
 	private String				sector;
 
 	@NotBlank
-	private String				ceoName;
+	private String				ceoname;
 
 	@NotBlank
-	private String				activDescription;
+	private String				activdescription;
 
 	@NotBlank
 	private String				website;
@@ -45,7 +45,7 @@ public class CRecord extends DomainEntity {
 	private String				email;
 
 	@NotBlank
-	private String				companyType;
+	private String				companytype;
 
 	@NotBlank
 	@Range(min = 0, max = 5)

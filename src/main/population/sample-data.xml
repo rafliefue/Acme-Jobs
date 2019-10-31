@@ -42,27 +42,27 @@
 
 	<!-- Records beans -->
 	
-	<bean id="record01" class="acme.entities.CRecords.CRecord">
-		<property name="companyName" value="Sample record 01"/>
+	<bean id="record01" class="acme.entities.records.Record">
+		<property name="companyname" value="Sample record 01"/>
 		<property name="sector" value="Informática"/>
-		<property name="ceoName" value="Pedro Manuel Cobos"/>
-		<property name="activDescription" value="This is the description of a sample record"/>
+		<property name="ceoname" value="Pedro Manuel Cobos"/>
+		<property name="activdescription" value="This is the description of a sample record"/>
 		<property name="website" value="http://www.example.com"/>
 		<property name="phone" value="+34 657036241"/>
 		<property name="email" value="pedcobram@alum.us.es"/>
-		<property name="companyType" value="Inc"/>
+		<property name="companytype" value="Inc"/>
 		<property name="rating" value="3"/>
 	</bean>
 	
-	<bean id="record02" class="acme.entities.CRecords.CRecord">
-		<property name="companyName" value="Sample record 02"/>
+	<bean id="record02" class="acme.entities.records.Record">
+		<property name="companyname" value="Sample record 02"/>
 		<property name="sector" value="Derecho"/>
-		<property name="ceoName" value="Rafael Liebana"/>
-		<property name="activDescription" value="This is the description of a second sample record"/>
+		<property name="ceoname" value="Rafael Liebana"/>
+		<property name="activdescription" value="This is the description of a second sample record"/>
 		<property name="website" value="http://www.example.com"/>
 		<property name="phone" value="+34 123456789"/>
 		<property name="email" value="rafliefue@alum.us.es"/>
-		<property name="companyType" value="Inc"/>
+		<property name="companytype" value="Inc"/>
 		<property name="rating" value="0"/>
 	</bean>
 

@@ -1,36 +1,36 @@
 
-package acme.features.anonymous.CRecords;
+package acme.features.anonymous.records;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.CRecords.CRecord;
+import acme.entities.records.Record;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnonymousCRecordListService implements AbstractListService<Anonymous, CRecord> {
+public class AnonymousRecordListService implements AbstractListService<Anonymous, Record> {
 
 	@Autowired
-	AnonymousCRecordRepository repository;
+	AnonymousRecordRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<CRecord> request) {
+	public boolean authorise(final Request<Record> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public Collection<CRecord> findMany(final Request<CRecord> request) {
+	public Collection<Record> findMany(final Request<Record> request) {
 		assert request != null;
 
-		Collection<CRecord> result;
+		Collection<Record> result;
 
 		result = this.repository.findManyAll();
 
@@ -38,12 +38,12 @@ public class AnonymousCRecordListService implements AbstractListService<Anonymou
 	}
 
 	@Override
-	public void unbind(final Request<CRecord> request, final CRecord entity, final Model model) {
+	public void unbind(final Request<Record> request, final Record entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "companyName", "sector", "activDescription", "rating");
+		request.unbind(entity, model, "companyname", "sector", "activdescription", "rating");
 	}
 
 }

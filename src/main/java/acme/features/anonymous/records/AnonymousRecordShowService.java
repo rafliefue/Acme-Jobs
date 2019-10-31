@@ -1,36 +1,36 @@
 
-package acme.features.anonymous.CRecords;
+package acme.features.anonymous.records;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.CRecords.CRecord;
+import acme.entities.records.Record;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AnonymousCRecordShowService implements AbstractShowService<Anonymous, CRecord> {
+public class AnonymousRecordShowService implements AbstractShowService<Anonymous, Record> {
 
 	//Internal State
 
 	@Autowired
-	private AnonymousCRecordRepository repository;
+	private AnonymousRecordRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<CRecord> request) {
+	public boolean authorise(final Request<Record> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public CRecord findOne(final Request<CRecord> request) {
+	public Record findOne(final Request<Record> request) {
 		assert request != null;
 
-		CRecord result;
+		Record result;
 		int id;
 
 		id = request.getModel().getInteger("id");
@@ -40,12 +40,12 @@ public class AnonymousCRecordShowService implements AbstractShowService<Anonymou
 	}
 
 	@Override
-	public void unbind(final Request<CRecord> request, final CRecord entity, final Model model) {
+	public void unbind(final Request<Record> request, final Record entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "companyName", "sector", "ceoName", "activDescription", "website", "phone", "email", "companyType", "rating");
+		request.unbind(entity, model, "companyname", "sector", "ceoname", "activdescription", "website", "phone", "email", "companytype", "rating");
 	}
 
 }

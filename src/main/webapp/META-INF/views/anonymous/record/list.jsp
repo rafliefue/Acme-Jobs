@@ -15,9 +15,9 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:form>
-	<acme:list-column code="anonymous.CRecord.list.label.companyName" path="companyName" width="25%"/>
-	<acme:list-column code="anonymous.CRecord.list.label.sector" path="sector" width="25%"/>
-	<acme:list-column code="anonymous.CRecord.list.label.activDescription" path="activDescription" width="40%"/>
-	<acme:list-column code="anonymous.CRecord.list.label.rating" path="rating" width="10%"/>
-</acme:form>
+<acme:list>
+	<acme:list-column code="anonymous.record.list.label.companyName" path="companyname" width="25%"/>
+	<acme:list-column code="anonymous.record.list.label.sector" path="sector" width="25%"/>
+	<acme:list-column code="anonymous.record.list.label.activDescription" path="activdescription" width="40%"/>
+	<acme:list-column code="anonymous.record.list.label.rating" path="rating" width="10%"/>
+</acme:list>
