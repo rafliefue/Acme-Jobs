@@ -38,8 +38,30 @@
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="This is a very old announcement"/>
 	</bean>
+	<bean id="investor01" class="acme.entities.investor.Investor">
+		<property name="name" value="Antonio Hernández"/>
+		<property name="sector" value="Servicios Industriales"/>
+		<property name="investingStatement" value="mucho"/>
+		<property name="star" value="3"/>
+	</bean>
+		<bean id="investor02" class="acme.entities.investor.Investor">
+		<property name="name" value="Carlos Lozano"/>
+		<property name="sector" value="Informática"/>
+		<property name="investingStatement" value="poco"/>
+		<property name="star" value="4"/>
+	</bean>
+	<bean id="investor03" class="acme.entities.investor.Investor">
+		<property name="name" value="Juan Toledo"/>
+		<property name="sector" value="Derecho"/>
+		<property name="investingStatement" value="mucho"/>
+		<property name="star"><null/></property>
+	</bean>
 
-
-
+<bean id="investor04" class="acme.entities.investor.Investor">
+		<property name="name" value="Arthur Morgan"/>
+		<property name="sector" value="Videojuegos"/>
+		<property name="investingStatement" value="mucho"/>
+		<property name="star" value="5"/>
+	</bean>
 
 </beans>
