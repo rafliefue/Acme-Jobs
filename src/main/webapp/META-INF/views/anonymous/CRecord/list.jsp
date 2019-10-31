@@ -16,8 +16,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:list-column code="anonymous.c-record.list.label.companyName" path="companyName" width="25%"/>
-	<acme:list-column code="anonymous.c-record.list.label.sector" path="sector" width="25%"/>
-	<acme:list-column code="anonymous.c-record.list.label.activDescription" path="activDescription" width="40%"/>
-	<acme:list-column code="anonymous.c-record.list.label.rating" path="rating" width="10%"/>
+	<acme:list-column code="anonymous.CRecord.list.label.companyName" path="companyName" width="25%"/>
+	<acme:list-column code="anonymous.CRecord.list.label.sector" path="sector" width="25%"/>
+	<acme:list-column code="anonymous.CRecord.list.label.activDescription" path="activDescription" width="40%"/>
+	<acme:list-column code="anonymous.CRecord.list.label.rating" path="rating" width="10%"/>
 </acme:form>

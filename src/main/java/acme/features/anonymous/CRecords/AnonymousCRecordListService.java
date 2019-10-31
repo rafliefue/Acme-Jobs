@@ -1,33 +1,33 @@
 
-package acme.features.anonymous.c_records;
+package acme.features.anonymous.CRecords;
 
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.c_records.C_Record;
+import acme.entities.CRecords.CRecord;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AnonymousCRecordListService implements AbstractListService<Anonymous, C_Record> {
+public class AnonymousCRecordListService implements AbstractListService<Anonymous, CRecord> {
 
 	@Autowired
 	AnonymousCRecordRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<C_Record> request) {
+	public boolean authorise(final Request<CRecord> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<C_Record> request, final C_Record entity, final Model model) {
+	public void unbind(final Request<CRecord> request, final CRecord entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -36,10 +36,10 @@ public class AnonymousCRecordListService implements AbstractListService<Anonymou
 	}
 
 	@Override
-	public Collection<C_Record> findMany(final Request<C_Record> request) {
+	public Collection<CRecord> findMany(final Request<CRecord> request) {
 		assert request != null;
 
-		Collection<C_Record> result;
+		Collection<CRecord> result;
 
 		result = this.repository.findManyAll();
 

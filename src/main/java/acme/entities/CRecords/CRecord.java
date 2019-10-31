@@ -1,5 +1,5 @@
 
-package acme.entities.c_records;
+package acme.entities.CRecords;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
@@ -14,7 +14,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class C_Record extends DomainEntity {
+public class CRecord extends DomainEntity {
 
 	//Identificador
 

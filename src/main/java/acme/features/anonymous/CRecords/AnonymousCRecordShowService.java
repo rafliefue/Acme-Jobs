@@ -1,17 +1,17 @@
 
-package acme.features.anonymous.c_records;
+package acme.features.anonymous.CRecords;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.c_records.C_Record;
+import acme.entities.CRecords.CRecord;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AnonymousCRecordShowService implements AbstractShowService<Anonymous, C_Record> {
+public class AnonymousCRecordShowService implements AbstractShowService<Anonymous, CRecord> {
 
 	//Internal State
 
@@ -20,14 +20,14 @@ public class AnonymousCRecordShowService implements AbstractShowService<Anonymou
 
 
 	@Override
-	public boolean authorise(final Request<C_Record> request) {
+	public boolean authorise(final Request<CRecord> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<C_Record> request, final C_Record entity, final Model model) {
+	public void unbind(final Request<CRecord> request, final CRecord entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
@@ -36,10 +36,10 @@ public class AnonymousCRecordShowService implements AbstractShowService<Anonymou
 	}
 
 	@Override
-	public C_Record findOne(final Request<C_Record> request) {
+	public CRecord findOne(final Request<CRecord> request) {
 		assert request != null;
 
-		C_Record result;
+		CRecord result;
 		int id;
 
 		id = request.getModel().getInteger("id");

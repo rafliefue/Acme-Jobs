@@ -42,7 +42,7 @@
 
 	<!-- Records beans -->
 	
-	<bean id="record01" class="acme.entities.c_records.C_Record">
+	<bean id="record01" class="acme.entities.CRecords.CRecord">
 		<property name="companyName" value="Sample record 01"/>
 		<property name="sector" value="Informática"/>
 		<property name="ceoName" value="Pedro Manuel Cobos"/>
@@ -54,7 +54,7 @@
 		<property name="rating" value="3"/>
 	</bean>
 	
-	<bean id="record02" class="acme.entities.c_records.C_Record">
+	<bean id="record02" class="acme.entities.CRecords.CRecord">
 		<property name="companyName" value="Sample record 02"/>
 		<property name="sector" value="Derecho"/>
 		<property name="ceoName" value="Rafael Liebana"/>
