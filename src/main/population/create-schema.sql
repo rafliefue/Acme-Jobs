@@ -30,7 +30,7 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `c_record` (
+    create table `crecord` (
        `id` integer not null,
         `version` integer not null,
         `activ_description` varchar(255),

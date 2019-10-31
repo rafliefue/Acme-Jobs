@@ -27,15 +27,6 @@ public class AnonymousCRecordListService implements AbstractListService<Anonymou
 	}
 
 	@Override
-	public void unbind(final Request<CRecord> request, final CRecord entity, final Model model) {
-		assert request != null;
-		assert entity != null;
-		assert model != null;
-
-		request.unbind(entity, model, "companyName", "sector", "activDescription", "rating");
-	}
-
-	@Override
 	public Collection<CRecord> findMany(final Request<CRecord> request) {
 		assert request != null;
 
@@ -44,6 +35,15 @@ public class AnonymousCRecordListService implements AbstractListService<Anonymou
 		result = this.repository.findManyAll();
 
 		return result;
+	}
+
+	@Override
+	public void unbind(final Request<CRecord> request, final CRecord entity, final Model model) {
+		assert request != null;
+		assert entity != null;
+		assert model != null;
+
+		request.unbind(entity, model, "companyName", "sector", "activDescription", "rating");
 	}
 
 }

@@ -27,7 +27,7 @@
 
     drop table if exists `authenticated`;
 
-    drop table if exists `c_record`;
+    drop table if exists `crecord`;
 
     drop table if exists `consumer`;
 

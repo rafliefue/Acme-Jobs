@@ -27,15 +27,6 @@ public class AnonymousCRecordShowService implements AbstractShowService<Anonymou
 	}
 
 	@Override
-	public void unbind(final Request<CRecord> request, final CRecord entity, final Model model) {
-		assert request != null;
-		assert entity != null;
-		assert model != null;
-
-		request.unbind(entity, model, "companyName", "sector", "ceoName", "activDescription", "website", "phone", "email", "companyType", "rating");
-	}
-
-	@Override
 	public CRecord findOne(final Request<CRecord> request) {
 		assert request != null;
 
@@ -46,6 +37,15 @@ public class AnonymousCRecordShowService implements AbstractShowService<Anonymou
 		result = this.repository.findOneById(id);
 
 		return result;
+	}
+
+	@Override
+	public void unbind(final Request<CRecord> request, final CRecord entity, final Model model) {
+		assert request != null;
+		assert entity != null;
+		assert model != null;
+
+		request.unbind(entity, model, "companyName", "sector", "ceoName", "activDescription", "website", "phone", "email", "companyType", "rating");
 	}
 
 }
