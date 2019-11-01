@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.announcements;
+package acme.features.authenticated.announcement;
 
 import java.util.Collection;
 
