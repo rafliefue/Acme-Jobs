@@ -48,7 +48,7 @@
 		<property name="ceoname" value="Pedro Manuel Cobos"/>
 		<property name="activdescription" value="This is the description of a sample record"/>
 		<property name="website" value="http://www.example.com"/>
-		<property name="phone" value="+34 657036241"/>
+		<property name="phone" value="+012 (3456) 789101"/>
 		<property name="email" value="pedcobram@alum.us.es"/>
 		<property name="companytype" value="Inc"/>
 		<property name="rating" value="3"/>
@@ -60,9 +60,9 @@
 		<property name="ceoname" value="Rafael Liebana"/>
 		<property name="activdescription" value="This is the description of a second sample record"/>
 		<property name="website" value="http://www.example.com"/>
-		<property name="phone" value="+34 123456789"/>
+		<property name="phone" value="+999 (9999) 123456"/>
 		<property name="email" value="rafliefue@alum.us.es"/>
-		<property name="companytype" value="Inc"/>
+		<property name="companytype" value="LLC"/>
 		<property name="rating" value="0"/>
 	</bean>
 

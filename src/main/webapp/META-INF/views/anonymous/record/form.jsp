@@ -20,11 +20,11 @@
 	<acme:form-textbox code="anonymous.record.form.label.sector" path="sector" />
 	<acme:form-textbox code="anonymous.record.form.label.ceoName" path="ceoname" />
 	<acme:form-textarea code="anonymous.record.form.label.activDescription" path="activdescription"/>
-	<acme:form-textbox code="anonymous.record.form.label.website" path="website" />
+	<acme:form-url code="anonymous.record.form.label.website" path="website" />
 	<acme:form-textbox code="anonymous.record.form.label.phone" path="phone" />
 	<acme:form-textbox code="anonymous.record.form.label.email" path="email" />
 	<acme:form-textbox code="anonymous.record.form.label.companyType" path="companytype" />
-	<acme:form-textbox code="anonymous.record.form.label.rating" path="rating" />
+	<acme:form-integer code="anonymous.record.form.label.rating" path="rating" />
 	
   	<acme:form-return code="anonymous.records.button.return"/>
 </acme:form>

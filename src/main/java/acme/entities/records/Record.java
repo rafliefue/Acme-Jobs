@@ -4,6 +4,7 @@ package acme.entities.records;
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Range;
 
@@ -38,6 +39,7 @@ public class Record extends DomainEntity {
 	private String				website;
 
 	@NotBlank
+	@Pattern(regexp = "^([+][0-9]{3}[ ]{1}[\\(]{1}[0-9]{4}[\\)]{1}[ ]{1}[0-9]{6})$", message = "The phone number has to follow the following pattern: “+999 (9999) 999999")
 	private String				phone;
 
 	@NotBlank
@@ -45,6 +47,7 @@ public class Record extends DomainEntity {
 	private String				email;
 
 	@NotBlank
+	@Pattern(regexp = "[I]{1}[n]{1}[c]{1}|[L]{1}[L]{1}[C]{1}", flags = Pattern.Flag.CASE_INSENSITIVE, message = "The company type can only be 'Inc' or 'LLC'")
 	private String				companytype;
 
 	@NotBlank
