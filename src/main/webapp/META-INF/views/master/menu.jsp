@@ -24,6 +24,10 @@
 		
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.announcement" action="../authenticated/announcement/list"/>
+
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.challenge" action="../authenticated/challenge/list"/>
+
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.offer" action="../authenticated/offer/list"/>
 		</acme:menu-option>
