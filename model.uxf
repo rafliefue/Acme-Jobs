@@ -304,7 +304,8 @@ has v</panel_attributes>
       <w>252</w>
       <h>77</h>
     </coordinates>
-    <panel_attributes>Announcement
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Announcement
 --
 + title: String {NotBlank}
 + moment: Date {Temporal (TIMESTAMP), Past}
@@ -326,6 +327,27 @@ Shout
 + moment: Date {Temporal (TIMESTAMP), Past}
 + author: String {NotBlank}
 + text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>448</x>
+      <y>392</y>
+      <w>231</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Offer
+--
++ title: String {NotBlank}
++ moment: Date {Temporal (TIMESTAMP), Past}
++ deadline: Date {Temporal (TIMESTAMP), Future}
++ text: String {NotBlank}
++ offer: Money {NotNull, Valid}
++ ticker: String {Pattern, Unique, NotBlank}
+
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
