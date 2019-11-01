@@ -31,10 +31,11 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 
-# master.menu.anonymous #######################################################
+# master.menu.Authenticated #######################################################
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.announcement = Anuncios
+master.menu.authenticated.companyrecords = Archivos de la Compañía
 
 # master.menu.anonymous.company ###############################################
 
