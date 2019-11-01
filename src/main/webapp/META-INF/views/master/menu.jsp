@@ -24,7 +24,7 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.anonymous.company">
-			<acme:menu-suboption code="master.menu.anonymous.companyrecords" action="../anonymous/record/list/"/>
+			<acme:menu-suboption code="master.menu.anonymous.companyrecords" action="../anonymous/record/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
