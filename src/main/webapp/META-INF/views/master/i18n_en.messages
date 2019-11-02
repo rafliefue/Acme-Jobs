@@ -35,11 +35,14 @@ master.menu.anonymous.favourite-link = Favourite link
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement = Announcements
-
 master.menu.authenticated.challenge = Challenges
-
 master.menu.authenticated.offer = Offers
+master.menu.authenticated.companyrecords = Company Records
 
+# master.menu.anonymous.company ###############################################
+
+master.menu.anonymous.company = Company
+master.menu.anonymous.companyrecords = Company Records
 
 # master.menu.administrator ###################################################
 

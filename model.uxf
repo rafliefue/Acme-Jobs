@@ -332,6 +332,28 @@ Shout
   <element>
     <id>UMLClass</id>
     <coordinates>
+      <x>600</x>
+      <y>392</y>
+      <w>245</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Record
+--
++ companyName: String {NotBlank}
++ sector: String {NotBlank}
++ ceoName: String {NotBlank}
++ activDescription: String {NotBlank}
++ website: String {NotBlank}
++ phone: String {NotBlank}
++ email: String {NotBlank, Email}
++ companyType: String {NotBlank}
++ rating: String {NotBlank, Range(0,5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+	
+<element>
+    <id>UMLClass</id>
+    <coordinates>
       <x>448</x>
       <y>392</y>
       <w>231</w>
@@ -346,7 +368,6 @@ Offer
 + text: String {NotBlank}
 + offer: Money {NotNull, Valid}
 + ticker: String {Pattern, Unique, NotBlank}
-
 </panel_attributes>
     <additional_attributes/>
   </element>
