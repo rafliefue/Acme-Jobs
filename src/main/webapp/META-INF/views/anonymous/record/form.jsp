@@ -25,6 +25,7 @@
 	<acme:form-textbox code="anonymous.record.form.label.email" path="email" />
 	<acme:form-textbox code="anonymous.record.form.label.companyType" path="companytype" />
 	<acme:form-integer code="anonymous.record.form.label.rating" path="rating" />
+	<acme:form-textbox code="anonymous.record.form.label.rating" path="fullname" />
 	
   	<acme:form-return code="anonymous.records.button.return"/>
 </acme:form>

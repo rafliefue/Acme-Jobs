@@ -1,6 +1,8 @@
 
 package acme.entities.records;
 
+import java.beans.Transient;
+
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -53,4 +55,20 @@ public class Record extends DomainEntity {
 	@NotBlank
 	@Range(min = 0, max = 5)
 	private String				rating;
+
+
+	// Atributos derivados
+
+	@Transient
+	public String getFullCompany() {
+		StringBuilder result;
+
+		result = new StringBuilder();
+		result.append(this.companyname);
+		result.append(" ");
+		result.append(this.companytype);
+
+		return result.toString();
+	}
+
 }

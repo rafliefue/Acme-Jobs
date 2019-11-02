@@ -35,6 +35,7 @@ public class AnonymousRecordListService implements AbstractListService<Anonymous
 		result = this.repository.findManyAll();
 
 		return result;
+
 	}
 
 	@Override
