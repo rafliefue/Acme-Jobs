@@ -328,4 +328,23 @@ Shout
 + text: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>175</x>
+      <y>490</y>
+      <w>252</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Request
+--
++ title: String {NotBlank}
++ creationMoment: Date {Temporal (TIMESTAMP), Past}
++ deadline: Date {Temporal (TIMESTAMP), Future}
++ text: String {NotBlank}
++ award: Double
++ ticker: String {R\\p{Upper}{4}-[0-9]{5}}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

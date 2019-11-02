@@ -24,7 +24,10 @@
 		
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.announcement" action="../authenticated/announcement/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.request" action="../authenticated/request/list"/>
+			
 		</acme:menu-option>
+		
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>

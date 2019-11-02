@@ -40,6 +40,32 @@
 	</bean>
 
 
-
-
+	<bean id="request01" class="acme.entities.requests.Request">
+		<property name="ticker" value="RADFJ-23441"/>
+		<property name="title" value="Sample request 01"/>
+		<property name="creationMoment" value="2019/07/12 12:15"/>
+		<property name="deadline" value="2020/07/12 12:15"/>
+		<property name="text" value="This is the description of a sample request"/>
+		<property name="reward" value="1200.0"/>
+		
+	</bean>
+	
+	<bean id="request02" class="acme.entities.requests.Request">
+		<property name="ticker" value="RFREG-23512"/>
+		<property name="title" value="Sample request 02"/>
+		<property name="creationMoment" value="2019/07/02 12:15"/>
+		<property name="deadline" value="2020/07/12 12:15"/>
+		<property name="text" value="This is the description of a sample request"/>
+		<property name="reward" value="1220.0"/>
+		
+	</bean>
+	<bean id="request03" class="acme.entities.requests.Request">
+		<property name="ticker" value="RHJRX-77654"/>
+		<property name="title" value="Sample request 03"/>
+		<property name="creationMoment" value="2019/07/12 12:15"/>
+		<property name="deadline" value="2020/07/12 12:15"/>
+		<property name="text" value="This is the description of a sample request"/>
+		<property name="reward" value="1440.0"/>
+		
+	</bean>
 </beans>

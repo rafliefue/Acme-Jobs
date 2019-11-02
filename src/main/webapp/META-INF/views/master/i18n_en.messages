@@ -35,6 +35,8 @@ master.menu.anonymous.favourite-link = Favourite link
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement = Announcements
+master.menu.authenticated.request = Request
+
 
 # master.menu.administrator ###################################################
 
