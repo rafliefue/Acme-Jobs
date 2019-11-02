@@ -44,6 +44,8 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.announcements" action="/administrator/announcement/list"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.spam" action="/administrator/spam/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
 
