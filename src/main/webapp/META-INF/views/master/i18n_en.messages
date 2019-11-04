@@ -38,6 +38,7 @@ master.menu.authenticated.announcement = Announcements
 master.menu.authenticated.challenge = Challenges
 master.menu.authenticated.offer = Offers
 master.menu.authenticated.companyrecords = Company Records
+master.menu.administrator.spam = Spam 
 
 # master.menu.anonymous.company ###############################################
 

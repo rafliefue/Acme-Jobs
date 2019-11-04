@@ -92,6 +92,14 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `spam` (
+       `id` integer not null,
+        `version` integer not null,
+        `spamwords` varchar(255),
+        `threshold` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,
