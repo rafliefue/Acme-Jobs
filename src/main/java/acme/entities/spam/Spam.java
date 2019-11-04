@@ -1,8 +1,11 @@
 
 package acme.entities.spam;
 
+import java.util.Collection;
+
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
-import javax.validation.constraints.NotBlank;
+import javax.persistence.FetchType;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -19,11 +22,10 @@ public class Spam extends DomainEntity {
 
 	// Atributos
 
-	@NotBlank
-	private String				spamwords;
+	@ElementCollection(fetch = FetchType.EAGER)
+	private Collection<String>	spamwords;
 
-	@NotBlank
-	private String				threshold;
+	private Double				threshold;
 
 	// Atributos derivados
 

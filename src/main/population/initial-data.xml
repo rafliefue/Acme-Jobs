@@ -43,6 +43,30 @@
 	<bean name="anonymousAnonymous" class="acme.framework.entities.Anonymous">
 		<property name="userAccount" ref="anonymousUserAccount" />
 	</bean>
+	
+	<!-- Custom anonymous user -->
+	
+	<bean name="anonymousCustomUserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" value="usuariodp" />
+		<property name="password" value="usuariodp" />
+		<property name="enabled" value="true" />
+		<property name="identity">
+			<bean class="acme.datatypes.UserIdentity">
+				<property name="name" value="usuario" />
+				<property name="surname" value="dp" />
+				<property name="email" value="usuario.dp@acme.com" />
+			</bean>
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="anonymousAnonymous" />
+			</list>
+		</property>
+	</bean>
+
+	<bean name="anonymousAnonymousCustom" class="acme.framework.entities.Anonymous">
+		<property name="userAccount" ref="anonymousCustomUserAccount" />
+	</bean>
 
 	<!-- Administrators -->
 	
@@ -74,8 +98,23 @@
 	</bean>
 	
 	<bean name="spamWords" class="acme.entities.spam.Spam">
-		<property name="spamwords" value="sex, hard core, viagra, cialis, nigeria, you've won, million dollar, sexo, has gando, millón de dolares"/>
-		<property name="threshold" value="1"/>
+		<property name="spamwords">
+			<list>
+				<value>sex</value>
+				<value>hard core</value>
+				<value>viagra</value>
+				<value>cialis</value>
+				<value>nigeria</value>
+				<value>you've won</value>
+				<value>million dollar</value>
+				<value>has ganado</value>
+				<value>millon de euros</value>
+				<value>sexo</value>
+			</list>
+		</property>
+		<property name="threshold">
+			<value>1.0</value>
+		</property>
 	</bean>
 	
 </beans>
