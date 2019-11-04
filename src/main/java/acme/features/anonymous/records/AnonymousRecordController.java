@@ -1,5 +1,5 @@
 
-package acme.features.authenticated.announcements;
+package acme.features.anonymous.records;
 
 import javax.annotation.PostConstruct;
 
@@ -7,22 +7,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.announcements.Announcement;
+import acme.entities.records.Record;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/authenticated/announcement/")
-public class AuthenticatedAnnouncementController extends AbstractController<Authenticated, Announcement> {
+@RequestMapping("/anonymous/record/")
+public class AnonymousRecordController extends AbstractController<Anonymous, Record> {
 
 	//Internal state
 
 	@Autowired
-	private AuthenticatedAnnouncementListService	listService;
+	private AnonymousRecordListService	listService;
 
 	@Autowired
-	private AuthenticatedAnnouncementShowService	showService;
+	private AnonymousRecordShowService	showService;
 
 
 	//Constructores

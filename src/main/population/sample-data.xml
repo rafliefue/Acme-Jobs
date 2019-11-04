@@ -38,9 +38,80 @@
 		<property name="moreInfo" value="http://www.example.com"/>
 		<property name="text" value="This is a very old announcement"/>
 	</bean>
+	
+  <!-- Challenge beans -->
 
+	<bean id="challenge01" class="acme.entities.challenges.Challenge">
+		<property name="title" value="The Challenge!"/>
+		<property name="moment" value="1900/10/10 19:10"/>
+		<property name="deadline" value="2020/10/10 19:10"/>
+		<property name="description" value="This is the best description"/>
+		<property name="goalBronze" value="Do a little"/>
+		<property name="goalSilver" value="Do something else"/>
+		<property name="goalGold" value="Do everything"/>
+		<property name="rewardBronze" value="One candy"/>
+		<property name="rewardSilver" value="Tons of candies"/>
+		<property name="rewardGold" value="1 million dollars"/>
+	</bean>
+  
+  <!-- Offers beans -->
+  
+	<bean id="offer01" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample offer 01"/>
+		<property name="moment" value="2019/06/10 10:35"/>
+		<property name="deadLine" value="2020/01/01 00:59"/>
+		<property name="text" value="This is the description of a sample offer"/>
+		<property name="offer" value="134.33 EUR"/>
+		<property name="ticker" value="OXXXX-99999"/>
+	</bean>
+	
+	<bean id="offer02" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample offer 02"/>
+		<property name="moment" value="2018/03/10 10:35"/>
+		<property name="deadLine" value="2020/01/02 03:59"/>
+		<property name="text" value="This is the second description of a sample offer"/>
+		<property name="offer" value="EUR 2000"/>
+		<property name="ticker" value="ODRTX-95999"/>
+	</bean>
+	
+	<bean id="offer03" class="acme.entities.offers.Offer">
+		<property name="title" value="Sample offer 03"/>
+		<property name="moment" value="2013/06/10 10:35"/>
+		<property name="deadLine" value="2021/01/03 04:59"/>
+		<property name="text" value="This is the third description of a sample offer"/>
+		<property name="offer" value="EUR 2000.22"/>
+		<property name="ticker" value="OABVD-95499"/>
+	</bean>
 
-	<bean id="request01" class="acme.entities.requests.Request">
+  <!-- Records beans -->
+	
+	<bean id="record01" class="acme.entities.records.Record">
+		<property name="companyname" value="Sample record 01"/>
+		<property name="sector" value="Informática"/>
+		<property name="ceoname" value="Pedro Manuel Cobos"/>
+		<property name="activdescription" value="This is the description of a sample record"/>
+		<property name="website" value="http://www.example.com"/>
+		<property name="phone" value="+012 (3456) 789101"/>
+		<property name="email" value="pedcobram@alum.us.es"/>
+		<property name="companytype" value="Inc"/>
+		<property name="rating" value="3"/>
+	</bean>
+	
+	<bean id="record02" class="acme.entities.records.Record">
+		<property name="companyname" value="Sample record 02"/>
+		<property name="sector" value="Derecho"/>
+		<property name="ceoname" value="Rafael Liebana"/>
+		<property name="activdescription" value="This is the description of a second sample record"/>
+		<property name="website" value="http://www.example.com"/>
+		<property name="phone" value="+999 (9999) 123456"/>
+		<property name="email" value="rafliefue@alum.us.es"/>
+		<property name="companytype" value="LLC"/>
+		<property name="rating" value="0"/>
+	</bean>
+  
+   <!-- Request beans -->
+  
+  <bean id="request01" class="acme.entities.requests.Request">
 		<property name="ticker" value="RADFJ-23441"/>
 		<property name="title" value="Sample request 01"/>
 		<property name="creationMoment" value="2019/07/12 12:15"/>
@@ -68,4 +139,5 @@
 		<property name="reward" value="1440.0"/>
 		
 	</bean>
+
 </beans>
