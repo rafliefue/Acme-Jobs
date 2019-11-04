@@ -37,6 +37,9 @@
 
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.offer" action="../authenticated/offer/list"/>
+      
+      <acme:menu-separator/>
+      <acme:menu-suboption code="master.menu.authenticated.request" action="../authenticated/request/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
