@@ -37,6 +37,8 @@
 
     drop table if exists `record`;
 
+    drop table if exists `request`;
+
     drop table if exists `spam`;
 
     drop table if exists `user_account`;
