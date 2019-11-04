@@ -16,7 +16,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.announcement.list.label.moment" path="moment" width="20%"/>
-	<acme:list-column code="authenticated.announcement.list.label.title" path="title" width="80%"/>
+	<acme:list-column code="administrator.announcement.list.label.moment" path="moment" width="20%"/>
+	<acme:list-column code="administrator.announcement.list.label.title" path="title" width="80%"/>
 </acme:list>
 

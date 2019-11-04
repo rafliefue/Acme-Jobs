@@ -36,17 +36,23 @@ master.menu.anonymous.announcements = Announcements
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement = Announcements
-
 master.menu.authenticated.challenge = Challenges
-
 master.menu.authenticated.offer = Offers
+master.menu.authenticated.companyrecords = Company Records
+master.menu.administrator.spam = Spam 
 
+# master.menu.anonymous.company ###############################################
+
+master.menu.anonymous.company = Company
+master.menu.anonymous.companyrecords = Company Records
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+master.menu.administrator.announcements = Announcements
+master.menu.authenticated.request = Request
 
 # master.menu.provider ########################################################
 
@@ -86,7 +92,7 @@ master.company.text = \
 	Acme Jobs, Inc. is a fictitious company that provides a \
 	job offer for the people and gives to the companies the possibility \
 	to offer jobs to hire people.
-master.company.name = Starter Project, Inc.
+master.company.name = Acme Jobs, Inc.
 master.company.address = Number Street, City, State, Country
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com

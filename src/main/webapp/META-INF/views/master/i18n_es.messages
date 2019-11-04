@@ -34,10 +34,15 @@ master.menu.anonymous.announcements = Anuncios
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.announcement = Anuncios
-
 master.menu.authenticated.challenge = Desafios
-
 master.menu.authenticated.offer = Ofertas
+master.menu.authenticated.companyrecords = Archivos de la Compañía
+master.menu.authenticated.request = Solicitudes
+
+# master.menu.anonymous.company ###############################################
+
+master.menu.anonymous.company = Compañía
+master.menu.anonymous.companyrecords = Archivos de la Compañía
 
 
 # master.menu.administrator ###################################################
@@ -45,6 +50,8 @@ master.menu.authenticated.offer = Ofertas
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.announcements = Anuncios
+master.menu.administrator.spam = Spam
 
 # master.menu.provider ########################################################
 
@@ -85,7 +92,7 @@ master.company.text = \
 	para las personas que buscan una oferta de trabajo y la posibilidad para \
 	las empresas de ofrecerlas.
 	
-master.company.name = Starter Project, Inc.
+master.company.name = Acme Jobs, Inc.
 master.company.address = Calle, número, Ciudad, Estado, País
 master.company.phone = +000 123 456
 master.company.email = contact@acme.com
@@ -101,4 +108,3 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
-	

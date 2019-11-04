@@ -77,6 +77,29 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `record` (
+       `id` integer not null,
+        `version` integer not null,
+        `activdescription` varchar(255),
+        `ceoname` varchar(255),
+        `companyname` varchar(255),
+        `companytype` varchar(255),
+        `email` varchar(255),
+        `phone` varchar(255),
+        `rating` varchar(255),
+        `sector` varchar(255),
+        `website` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `spam` (
+       `id` integer not null,
+        `version` integer not null,
+        `spamwords` varchar(255),
+        `threshold` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,

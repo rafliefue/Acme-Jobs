@@ -18,12 +18,12 @@
 	
 <tiles-definitions>
 	
-		<definition name="authenticated/announcement/list" extends="master">
-			<put-attribute name="body" type="template" value="../authenticated/announcement/list.jsp"/>
+		<definition name="administrator/spam/list" extends="master">
+			<put-attribute name="body" type="template" value="../administrator/spam/list.jsp"/>
 		</definition>
 		
-		<definition name="authenticated/announcement/form" extends="master">
-			<put-attribute name="body" type="template" value="../authenticated/announcement/form.jsp"/>
+		<definition name="administrator/spam/form" extends="master">
+			<put-attribute name="body" type="template" value="../administrator/spam/form.jsp"/>
 		</definition>
 
 </tiles-definitions>
