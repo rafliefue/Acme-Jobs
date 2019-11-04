@@ -19,6 +19,10 @@
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
 
+    alter table `spam_spamwords` 
+       drop 
+       foreign key `FK5u2srkdkc7nuwg4hbuxdjxs5n`;
+
     drop table if exists `administrator`;
 
     drop table if exists `announcement`;
@@ -37,7 +41,11 @@
 
     drop table if exists `record`;
 
+    drop table if exists `request`;
+
     drop table if exists `spam`;
+
+    drop table if exists `spam_spamwords`;
 
     drop table if exists `user_account`;
 
