@@ -36,6 +36,7 @@ master.menu.authenticated.announcement = Anuncios
 master.menu.authenticated.challenge = Desafios
 master.menu.authenticated.offer = Ofertas
 master.menu.authenticated.companyrecords = Archivos de la Compañía
+master.menu.authenticated.request = Solicitudes
 
 # master.menu.anonymous.company ###############################################
 
