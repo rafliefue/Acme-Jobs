@@ -1,36 +1,36 @@
 
-package acme.features.authenticated.records;
+package acme.features.authenticated.comprecords;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.records.Record;
+import acme.entities.comprecords.Comprecord;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Authenticated;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuthenticatedRecordShowService implements AbstractShowService<Authenticated, Record> {
+public class AuthenticatedComprecordShowService implements AbstractShowService<Authenticated, Comprecord> {
 
 	//Internal State
 
 	@Autowired
-	private AuthenticatedRecordRepository repository;
+	private AuthenticatedComprecordRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Record> request) {
+	public boolean authorise(final Request<Comprecord> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public Record findOne(final Request<Record> request) {
+	public Comprecord findOne(final Request<Comprecord> request) {
 		assert request != null;
 
-		Record result;
+		Comprecord result;
 		int id;
 
 		id = request.getModel().getInteger("id");
@@ -40,7 +40,7 @@ public class AuthenticatedRecordShowService implements AbstractShowService<Authe
 	}
 
 	@Override
-	public void unbind(final Request<Record> request, final Record entity, final Model model) {
+	public void unbind(final Request<Comprecord> request, final Comprecord entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;

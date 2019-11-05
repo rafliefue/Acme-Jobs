@@ -31,10 +31,9 @@ public class Announcement extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
-
 	private Date				moment;
 
-	@URL //El notblank de las diapositivas era una errata
+	@URL
 	private String				moreInfo;
 
 	@NotBlank

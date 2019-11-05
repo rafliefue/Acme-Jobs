@@ -85,19 +85,19 @@
 
   <!-- Records beans -->
 	
-	<bean id="record01" class="acme.entities.records.Record">
+	<bean id="record01" class="acme.entities.comprecords.Comprecord">
 		<property name="companyname" value="Sample record 01"/>
 		<property name="sector" value="Informática"/>
 		<property name="ceoname" value="Pedro Manuel Cobos"/>
 		<property name="activdescription" value="This is the description of a sample record"/>
 		<property name="website" value="http://www.example.com"/>
-		<property name="phone" value="+012 (3456) 789101"/>
+		<property name="phone" value="+34 (1234) 657036241"/>
 		<property name="email" value="pedcobram@alum.us.es"/>
-		<property name="companytype" value="Inc"/>
+		<property name="companytype" value="False"/>
 		<property name="rating" value="3"/>
 	</bean>
 	
-	<bean id="record02" class="acme.entities.records.Record">
+	<bean id="record02" class="acme.entities.comprecords.Comprecord">
 		<property name="companyname" value="Sample record 02"/>
 		<property name="sector" value="Derecho"/>
 		<property name="ceoname" value="Rafael Liebana"/>
@@ -105,7 +105,7 @@
 		<property name="website" value="http://www.example.com"/>
 		<property name="phone" value="+999 (9999) 123456"/>
 		<property name="email" value="rafliefue@alum.us.es"/>
-		<property name="companytype" value="LLC"/>
+		<property name="companytype" value="True"/>
 		<property name="rating" value="0"/>
 	</bean>
   

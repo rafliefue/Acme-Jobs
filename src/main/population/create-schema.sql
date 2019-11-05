@@ -46,12 +46,37 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `comprecord` (
+       `id` integer not null,
+        `version` integer not null,
+        `activdescription` varchar(255),
+        `ceoname` varchar(255),
+        `companyname` varchar(255),
+        `companytype` bit,
+        `email` varchar(255),
+        `phone` varchar(255),
+        `rating` varchar(255),
+        `sector` varchar(255),
+        `website` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `investor` (
+       `id` integer not null,
+        `version` integer not null,
+        `investing_statement` varchar(255),
+        `name` varchar(255),
+        `sector` varchar(255),
+        `star` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -77,27 +102,13 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `record` (
-       `id` integer not null,
-        `version` integer not null,
-        `activdescription` varchar(255),
-        `ceoname` varchar(255),
-        `companyname` varchar(255),
-        `companytype` varchar(255),
-        `email` varchar(255),
-        `phone` varchar(255),
-        `rating` varchar(255),
-        `sector` varchar(255),
-        `website` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
     create table `request` (
        `id` integer not null,
         `version` integer not null,
         `creation_moment` datetime(6),
         `deadline` datetime(6),
-        `reward` double precision,
+        `reward_amount` double precision,
+        `reward_currency` varchar(255),
         `text` varchar(255),
         `ticker` varchar(255),
         `title` varchar(255),
@@ -107,13 +118,9 @@
     create table `sysconfig` (
        `id` integer not null,
         `version` integer not null,
+        `spamwords` varchar(255),
         `threshold` double precision,
         primary key (`id`)
-    ) engine=InnoDB;
-
-    create table `sysconfig_spamwords` (
-       `sysconfig_id` integer not null,
-        `spamwords` varchar(255)
     ) engine=InnoDB;
 
     create table `user_account` (
@@ -167,8 +174,3 @@
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
-
-    alter table `sysconfig_spamwords` 
-       add constraint `FK6e5e9a9fukv21tqmsc010s2vw` 
-       foreign key (`sysconfig_id`) 
-       references `sysconfig` (`id`);

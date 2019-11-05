@@ -1,5 +1,5 @@
 
-package acme.entities.records;
+package acme.entities.comprecords;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.Email;
@@ -15,7 +15,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Record extends DomainEntity {
+public class Comprecord extends DomainEntity {
 
 	//Identificador
 
@@ -39,18 +39,15 @@ public class Record extends DomainEntity {
 	private String				website;
 
 	@NotBlank
-	@Pattern(regexp = "^([+][0-9]{3}[ ]{1}[\\(]{1}[0-9]{4}[\\)]{1}[ ]{1}[0-9]{6})$")
+	@Pattern(regexp = "^((?:[+][0-9]{1,3})?[ ]{1}(?:[\\(]{1})?(?:[0-9]{4})?(?:[\\)]{1})?[ ]{1}[0-9]{6,10})$")
 	private String				phone;
 
 	@NotBlank
 	@Email
 	private String				email;
 
-	@NotBlank
-	@Pattern(regexp = "[I]{1}[n]{1}[c]{1}|[L]{1}[L]{1}[C]{1}")
-	private String				companytype;
+	private Boolean				companytype;
 
-	@NotBlank
 	@Range(min = 0, max = 5)
 	private String				rating;
 }
