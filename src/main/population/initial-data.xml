@@ -97,7 +97,7 @@
 		<property name="userAccount" ref="administratorUserAccount" />
 	</bean>
 	
-	<bean name="spamWords" class="acme.entities.spam.Spam">
+	<bean name="spamWords" class="acme.entities.sysconfig.Sysconfig">
 		<property name="spamwords">
 			<list>
 				<value>sex</value>
