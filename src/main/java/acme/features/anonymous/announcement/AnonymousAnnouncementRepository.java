@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.announcements;
+package acme.features.anonymous.announcement;
 
 import java.util.Collection;
 import java.util.Date;

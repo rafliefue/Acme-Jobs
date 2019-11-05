@@ -1,38 +1,38 @@
 
-package acme.features.anonymous.announcements;
+package acme.features.anonymous.investor;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.announcements.Announcement;
+import acme.entities.investor.Investor;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AnonymousAnnouncementShowService implements AbstractShowService<Anonymous, Announcement> {
+public class AnonymousInvestorShowService implements AbstractShowService<Anonymous, Investor> {
 
 	//Internal State
 
 	@Autowired
-	private AnonymousAnnouncementRepository repository;
+	private AnonymousInvestorRepository repository;
 
 
 	//AbstractListService<Administrator, Announcement> interface
 
 	@Override
-	public boolean authorise(final Request<Announcement> request) {
+	public boolean authorise(final Request<Investor> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public Announcement findOne(final Request<Announcement> request) {
+	public Investor findOne(final Request<Investor> request) {
 		assert request != null;
 
-		Announcement result;
+		Investor result;
 		int id;
 
 		id = request.getModel().getInteger("id");
@@ -42,12 +42,12 @@ public class AnonymousAnnouncementShowService implements AbstractShowService<Ano
 	}
 
 	@Override
-	public void unbind(final Request<Announcement> request, final Announcement entity, final Model model) {
+	public void unbind(final Request<Investor> request, final Investor entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "title", "moment", "moreInfo", "text");
+		request.unbind(entity, model, "name", "sector", "investingStatement", "star");
 	}
 
 }

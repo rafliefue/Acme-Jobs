@@ -19,33 +19,35 @@
 <acme:menu-bar code="master.menu.home">
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
-			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.announcements" action="../anonymous/announcement/list/"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.topinvestor" action="../anonymous/topInvestor/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.topcompanyrecords" action="../anonymous/topRecord/list"/>
+		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.announcement" action="../authenticated/announcement/list"/>			
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.challenge" action="../authenticated/challenge/list"/>
+      		<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.companyrecords" action="../authenticated/record/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.investor" action="/authenticated/investor/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.offer" action="../authenticated/offer/list"/>     
+      		<acme:menu-separator/>
+      		<acme:menu-suboption code="master.menu.authenticated.request" action="../authenticated/request/list"/>     		      		
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.anonymous.company">
 			<acme:menu-suboption code="master.menu.anonymous.companyrecords" action="../anonymous/record/list"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.anonymous.topcompanyrecords" action="../anonymous/topRecord/list"/>
-			
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
-		
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.announcement" action="../authenticated/announcement/list"/>
-			
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.companyrecords" action="../authenticated/record/list"/>
-
-      		<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.challenge" action="../authenticated/challenge/list"/>
-
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.offer" action="../authenticated/offer/list"/>
-      
-      <acme:menu-separator/>
-      <acme:menu-suboption code="master.menu.authenticated.request" action="../authenticated/request/list"/>
+		<acme:menu-option code="master.menu.anonymous.investor">
+			<acme:menu-suboption code="master.menu.anonymous.investorrecords" action="../anonymous/investor/list"/>		
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
