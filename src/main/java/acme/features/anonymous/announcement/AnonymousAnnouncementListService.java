@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.announcements;
+package acme.features.anonymous.announcement;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;

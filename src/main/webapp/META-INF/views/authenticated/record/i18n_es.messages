@@ -8,23 +8,23 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-# anonymous.record.form ###############################
+# authenticated.record.form ###############################
 
-anonymous.record.form.label.companyName = Nombre de la Compañía:
-anonymous.record.form.label.sector = Sector:
-anonymous.record.form.label.ceoName = CEO:
-anonymous.record.form.label.activDescription = Descripcion de la Actividad:
-anonymous.record.form.label.website = Página Web:
-anonymous.record.form.label.phone = Telefono:
-anonymous.record.form.label.email = E-mail:
-anonymous.record.form.label.companyType: Tipo de Compañía:
-anonymous.record.form.label.rating = Rating:
+authenticated.record.form.label.companyName = Nombre de la Compañía:
+authenticated.record.form.label.sector = Sector:
+authenticated.record.form.label.ceoName = CEO:
+authenticated.record.form.label.activDescription = Descripcion de la Actividad:
+authenticated.record.form.label.website = Página Web:
+authenticated.record.form.label.phone = Telefono:
+authenticated.record.form.label.email = E-mail:
+authenticated.record.form.label.companyType: Tipo de Compañía:
+authenticated.record.form.label.rating = Rating:
 
-anonymous.records.button.return = Volver
+authenticated.records.button.return = Volver
 
-# anonymous.record.list ###############################
+# authenticated.record.list ###############################
 
-anonymous.record.list.label.companyName: Nombre de la Compañía
-anonymous.record.list.label.sector = Sector
-anonymous.record.list.label.activDescription = Descripcion de la Actividad
-anonymous.record.list.label.rating = Rating
+authenticated.record.list.label.companyName: Nombre de la Compañía
+authenticated.record.list.label.sector = Sector
+authenticated.record.list.label.activDescription = Descripcion de la Actividad
+authenticated.record.list.label.rating = Rating

@@ -16,8 +16,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.record.list.label.companyName" path="companyname" width="25%"/>
-	<acme:list-column code="authenticated.record.list.label.sector" path="sector" width="25%"/>
-	<acme:list-column code="authenticated.record.list.label.activDescription" path="activdescription" width="40%"/>
-	<acme:list-column code="authenticated.record.list.label.rating" path="rating" width="10%"/>
+	<acme:list-column code="anonymous.topRecord.list.label.companyName" path="companyname" width="25%"/>
+	<acme:list-column code="anonymous.topRecord.list.label.sector" path="sector" width="25%"/>
+	<acme:list-column code="anonymous.topRecord.list.label.activDescription" path="activdescription" width="40%"/>
+	<acme:list-column code="anonymous.topRecord.list.label.rating" path="rating" width="10%"/>
 </acme:list>

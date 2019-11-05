@@ -29,25 +29,29 @@ master.menu.sign-out = Sign out
 # master.menu.anonymous #######################################################
 
 master.menu.anonymous = Anonymous
-master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.announcements = Announcements
-master.menu.anonymous.investor = Investors
-master.menu.anonymous.investorrecord = Investor Records
+master.menu.anonymous.topinvestor = Top Investor Records
+master.menu.anonymous.topcompanyrecords = Top Company Records
 
-# master.menu.administrator #######################################################
+# master.menu.authenticated #######################################################
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement = Announcements
 master.menu.authenticated.challenge = Challenges
 master.menu.authenticated.offer = Offers
 master.menu.authenticated.companyrecords = Company Records
-master.menu.authenticated.investorrecord = Investor Records
-master.menu.administrator.sysconfig = System Configuration
+master.menu.authenticated.request = Request
+master.menu.authenticated.investorrecords = Investor Records
 
 # master.menu.anonymous.company ###############################################
 
 master.menu.anonymous.company = Company
 master.menu.anonymous.companyrecords = Company Records
+
+# master.menu.anonymous.investor ###############################################
+
+master.menu.anonymous.investor = Investor
+master.menu.anonymous.investorrecords = Investor Records
 
 # master.menu.administrator ###################################################
 
@@ -55,7 +59,8 @@ master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.announcements = Announcements
-master.menu.authenticated.request = Request
+master.menu.administrator.spam = Spam 
+master.menu.administrator.sysconfig = System Configuration
 
 # master.menu.provider ########################################################
 
