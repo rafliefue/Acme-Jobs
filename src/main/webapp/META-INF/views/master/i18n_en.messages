@@ -32,7 +32,7 @@ master.menu.anonymous = Anonymous
 master.menu.anonymous.favourite-link = Favourite link
 master.menu.anonymous.announcements = Announcements
 
-# master.menu.anonymous #######################################################
+# master.menu.authenticated #######################################################
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.announcement = Announcements
@@ -45,6 +45,7 @@ master.menu.administrator.spam = Spam
 
 master.menu.anonymous.company = Company
 master.menu.anonymous.companyrecords = Company Records
+master.menu.anonymous.topcompanyrecords = Top Company Records
 
 # master.menu.administrator ###################################################
 

@@ -106,7 +106,7 @@
 		<property name="phone" value="+999 (9999) 123456"/>
 		<property name="email" value="rafliefue@alum.us.es"/>
 		<property name="companytype" value="LLC"/>
-		<property name="rating" value="0"/>
+		<property name="rating" value="5"/>
 	</bean>
   
    <!-- Request beans -->

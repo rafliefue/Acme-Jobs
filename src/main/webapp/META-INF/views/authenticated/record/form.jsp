@@ -16,15 +16,15 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
-	<acme:form-textbox code="anonymous.record.form.label.companyName" path="companyname" />
-	<acme:form-textbox code="anonymous.record.form.label.sector" path="sector" />
-	<acme:form-textbox code="anonymous.record.form.label.ceoName" path="ceoname" />
-	<acme:form-textarea code="anonymous.record.form.label.activDescription" path="activdescription"/>
-	<acme:form-url code="anonymous.record.form.label.website" path="website" />
-	<acme:form-textbox code="anonymous.record.form.label.phone" path="phone" />
-	<acme:form-textbox code="anonymous.record.form.label.email" path="email" />
-	<acme:form-textbox code="anonymous.record.form.label.companyType" path="companytype" />
-	<acme:form-integer code="anonymous.record.form.label.rating" path="rating" />
+	<acme:form-textbox code="authenticated.record.form.label.companyName" path="companyname" />
+	<acme:form-textbox code="authenticated.record.form.label.sector" path="sector" />
+	<acme:form-textbox code="authenticated.record.form.label.ceoName" path="ceoname" />
+	<acme:form-textarea code="authenticated.record.form.label.activDescription" path="activdescription"/>
+	<acme:form-url code="authenticated.record.form.label.website" path="website" />
+	<acme:form-textbox code="authenticated.record.form.label.phone" path="phone" />
+	<acme:form-textbox code="authenticated.record.form.label.email" path="email" />
+	<acme:form-textbox code="authenticated.record.form.label.companyType" path="companytype" />
+	<acme:form-integer code="authenticated.record.form.label.rating" path="rating" />
 	
-  	<acme:form-return code="anonymous.records.button.return"/>
+  	<acme:form-return code="authenticated.records.button.return"/>
 </acme:form>

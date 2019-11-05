@@ -43,6 +43,7 @@ master.menu.authenticated.request = Solicitudes
 
 master.menu.anonymous.company = Compañía
 master.menu.anonymous.companyrecords = Archivos de la Compañía
+master.menu.anonymous.topcompanyrecords = Mejores Archivos de la Compaía
 
 
 # master.menu.administrator ###################################################

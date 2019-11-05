@@ -25,15 +25,20 @@
 		
 		<acme:menu-option code="master.menu.anonymous.company">
 			<acme:menu-suboption code="master.menu.anonymous.companyrecords" action="../anonymous/record/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.topcompanyrecords" action="../anonymous/topRecord/list"/>
+			
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
+		
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.announcement" action="../authenticated/announcement/list"/>
 			
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.companyrecords" action="../authenticated/record/list"/>
 
-      <acme:menu-separator/>
+      		<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.challenge" action="../authenticated/challenge/list"/>
 
 			<acme:menu-separator/>
