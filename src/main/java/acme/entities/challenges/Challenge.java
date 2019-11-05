@@ -1,16 +1,17 @@
 
 package acme.entities.challenges;
 
-import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -48,12 +49,15 @@ public class Challenge extends DomainEntity {
 	private String				goalGold;
 
 	@NotNull
-	private BigDecimal			rewardBronze;
+	@Valid
+	private Money				rewardBronze;
 
 	@NotNull
-	private BigDecimal			rewardSilver;
+	@Valid
+	private Money				rewardSilver;
 
 	@NotNull
-	private BigDecimal			rewardGold;
+	@Valid
+	private Money				rewardGold;
 
 }
