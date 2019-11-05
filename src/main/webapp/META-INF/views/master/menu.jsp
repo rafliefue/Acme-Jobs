@@ -23,18 +23,16 @@
 			<acme:menu-suboption code="master.menu.anonymous.announcements" action="/anonymous/announcement/list"/>
 		</acme:menu-option>
 		
-		<acme:menu-option code="master.menu.anonymous.company">
-			<acme:menu-suboption code="master.menu.anonymous.companyrecords" action="/anonymous/record/list"/>
-		</acme:menu-option>
     <acme:menu-option code="master.menu.anonymous.investor" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.investorrecord" action="/anonymous/investor/list"/>
+			<acme:menu-suboption code="master.menu.anonymous.companyrecords" action="/anonymous/comprecord/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.announcement" action="/authenticated/announcement/list"/>
 			
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.companyrecords" action="/authenticated/record/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.companyrecords" action="/authenticated/comprecord/list"/>
       
       <acme:menu-separator/>
       <acme:menu-suboption code="master.menu.authenticated.investorrecord" action="/authenticated/investor/list"/>

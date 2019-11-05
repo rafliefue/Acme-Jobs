@@ -13,7 +13,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/authenticated/comprecords/")
+@RequestMapping("/authenticated/comprecord/")
 public class AuthenticatedComprecordController extends AbstractController<Authenticated, Comprecord> {
 
 	//Internal state

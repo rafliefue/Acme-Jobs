@@ -13,7 +13,7 @@ import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Anonymous;
 
 @Controller
-@RequestMapping("/anonymous/comprecords/")
+@RequestMapping("/anonymous/comprecord/")
 public class AnonymousComprecordController extends AbstractController<Anonymous, Comprecord> {
 
 	//Internal state
