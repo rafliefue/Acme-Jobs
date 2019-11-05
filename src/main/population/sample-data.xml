@@ -117,7 +117,7 @@
 		<property name="creationMoment" value="2019/07/12 12:15"/>
 		<property name="deadline" value="2020/07/12 12:15"/>
 		<property name="text" value="This is the description of a sample request"/>
-		<property name="reward" value="1200.0"/>
+		<property name="reward" value="EUR 1200.0"/>
 		
 	</bean>
 	
@@ -127,7 +127,7 @@
 		<property name="creationMoment" value="2019/07/02 12:15"/>
 		<property name="deadline" value="2020/07/12 12:15"/>
 		<property name="text" value="This is the description of a sample request"/>
-		<property name="reward" value="1220.0"/>
+		<property name="reward" value="EUR 1220.0"/>
 		
 	</bean>
 	<bean id="request03" class="acme.entities.requests.Request">
@@ -136,7 +136,7 @@
 		<property name="creationMoment" value="2019/07/12 12:15"/>
 		<property name="deadline" value="2020/07/12 12:15"/>
 		<property name="text" value="This is the description of a sample request"/>
-		<property name="reward" value="1440.0"/>
+		<property name="reward" value="EUR 1440.0"/>
 		<!--investor records bean-->
 	</bean>
   	<bean id="investor01" class="acme.entities.investor.Investor">
