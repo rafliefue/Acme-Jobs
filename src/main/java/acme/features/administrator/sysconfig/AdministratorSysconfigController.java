@@ -1,5 +1,5 @@
 
-package acme.features.administrator.spam;
+package acme.features.administrator.sysconfig;
 
 import javax.annotation.PostConstruct;
 
@@ -7,22 +7,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.spam.Spam;
+import acme.entities.sysconfig.Sysconfig;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/administrator/spam/")
-public class AdministratorSpamController extends AbstractController<Administrator, Spam> {
+@RequestMapping("/administrator/sysconfig/")
+public class AdministratorSysconfigController extends AbstractController<Administrator, Sysconfig> {
 
 	//Internal state
 
 	@Autowired
-	private AdministratorSpamListService	listService;
+	private AdministratorSysconfigListService	listService;
 
 	@Autowired
-	private AdministratorSpamShowService	showService;
+	private AdministratorSysconfigShowService	showService;
 
 
 	//Constructores

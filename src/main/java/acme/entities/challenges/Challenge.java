@@ -6,10 +6,12 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Future;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -32,7 +34,6 @@ public class Challenge extends DomainEntity {
 	private Date				moment;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Future
 	private Date				deadline;
 
 	@NotBlank
@@ -47,13 +48,16 @@ public class Challenge extends DomainEntity {
 	@NotBlank
 	private String				goalGold;
 
-	@NotBlank
-	private String				rewardBronze;
+	@NotNull
+	@Valid
+	private Money				rewardBronze;
 
-	@NotBlank
-	private String				rewardSilver;
+	@NotNull
+	@Valid
+	private Money				rewardSilver;
 
-	@NotBlank
-	private String				rewardGold;
+	@NotNull
+	@Valid
+	private Money				rewardGold;
 
 }

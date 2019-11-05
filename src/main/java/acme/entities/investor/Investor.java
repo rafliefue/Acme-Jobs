@@ -16,7 +16,6 @@ import lombok.Setter;
 public class Investor extends DomainEntity {
 
 	//Identificador
-
 	private static final long	serialVersionUID	= 1L;
 
 	//Atributos

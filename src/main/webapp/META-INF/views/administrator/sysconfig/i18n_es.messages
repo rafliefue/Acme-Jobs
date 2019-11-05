@@ -8,14 +8,14 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-# administrator.spam.list #################################
+# administrator.sysconfig.list #################################
 
-administrator.spam.list.label.spamwords = Spam Words
-administrator.spam.list.label.threshold = Threshold
+administrator.sysconfig.list.label.spamwords = Palabras Spam
+administrator.sysconfig.list.label.threshold = Umbral
 
-# administrator.spam.form ##################################
+# administrator.sysconfig.form ##################################
 
-administrator.spam.form.label.spamwords = Spam Words
-administrator.spam.form.label.threshold = Threshold
+administrator.sysconfig.form.label.spamwords = Palabras Spam
+administrator.sysconfig.form.label.threshold = Umbral
 
-administrator.spam.form.return = Return
+administrator.sysconfig.form.return = Volver

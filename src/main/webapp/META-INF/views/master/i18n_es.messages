@@ -39,7 +39,7 @@ master.menu.authenticated.challenge = Desafios
 master.menu.authenticated.offer = Ofertas
 master.menu.authenticated.companyrecords = Archivos de la Compañía
 master.menu.authenticated.request = Solicitudes
-master.menu.authenticated.investor = Registros de Inversores
+master.menu.authenticated.investorrecords = Registros de Inversores
 
 # master.menu.anonymous.company ###############################################
 
@@ -57,8 +57,8 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcements = Anuncios
-master.menu.administrator.spam = Spam
-
+master.menu.administrator.spam = Spam 
+master.menu.administrator.sysconfig = Configuración del Sistema
 
 # master.menu.provider ########################################################
 
@@ -115,3 +115,4 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
+

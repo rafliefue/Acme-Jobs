@@ -20,6 +20,8 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-separator/>
+      <acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
+      <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.announcements" action="../anonymous/announcement/list/"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.topinvestor" action="../anonymous/topInvestor/list"/>
@@ -28,18 +30,18 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
-			<acme:menu-separator/>
+			  <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.announcement" action="../authenticated/announcement/list"/>			
-			<acme:menu-separator/>
+			  <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.challenge" action="../authenticated/challenge/list"/>
-      		<acme:menu-separator/>
+        <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.companyrecords" action="../authenticated/record/list"/>
-			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.investor" action="/authenticated/investor/list"/>
-			<acme:menu-separator/>
+			  <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.investorrecords" action="/authenticated/investor/list"/>
+			  <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.offer" action="../authenticated/offer/list"/>     
-      		<acme:menu-separator/>
-      		<acme:menu-suboption code="master.menu.authenticated.request" action="../authenticated/request/list"/>     		      		
+        <acme:menu-separator/>
+      <acme:menu-suboption code="master.menu.authenticated.request" action="../authenticated/request/list"/>     		      		
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.anonymous.company">
@@ -55,7 +57,7 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.announcements" action="/administrator/announcement/list"/>
 			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.administrator.spam" action="/administrator/spam/list"/>
+			<acme:menu-suboption code="master.menu.administrator.sysconfig" action="/administrator/sysconfig/list"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>

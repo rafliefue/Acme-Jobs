@@ -18,12 +18,12 @@
 	
 <tiles-definitions>
 	
-		<definition name="administrator/spam/list" extends="master">
-			<put-attribute name="body" type="template" value="../administrator/spam/list.jsp"/>
+		<definition name="administrator/sysconfig/list" extends="master">
+			<put-attribute name="body" type="template" value="../administrator/sysconfig/list.jsp"/>
 		</definition>
 		
-		<definition name="administrator/spam/form" extends="master">
-			<put-attribute name="body" type="template" value="../administrator/spam/form.jsp"/>
+		<definition name="administrator/sysconfig/form" extends="master">
+			<put-attribute name="body" type="template" value="../administrator/sysconfig/form.jsp"/>
 		</definition>
 
 </tiles-definitions>
