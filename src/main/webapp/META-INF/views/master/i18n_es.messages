@@ -29,6 +29,8 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.announcements = Anuncios
+master.menu.anonymous.investor = Inversores
+master.menu.anonymous.investorrecord = Registro de inversores
 
 # master.menu.anonymous #######################################################
 
@@ -38,6 +40,7 @@ master.menu.authenticated.challenge = Desafios
 master.menu.authenticated.offer = Ofertas
 master.menu.authenticated.companyrecords = Archivos de la Compañía
 master.menu.authenticated.request = Solicitudes
+master.menu.authenticated.investorrecord = Registro de inversores
 
 # master.menu.anonymous.company ###############################################
 
@@ -108,3 +111,4 @@ master.license.text = \
 	durante un máximo de 31 días y "language" para almacenar sus preferencias de \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
+
