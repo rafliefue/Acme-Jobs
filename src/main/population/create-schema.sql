@@ -104,15 +104,15 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `spam` (
+    create table `sysconfig` (
        `id` integer not null,
         `version` integer not null,
         `threshold` double precision,
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `spam_spamwords` (
-       `spam_id` integer not null,
+    create table `sysconfig_spamwords` (
+       `sysconfig_id` integer not null,
         `spamwords` varchar(255)
     ) engine=InnoDB;
 
@@ -168,7 +168,7 @@
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 
-    alter table `spam_spamwords` 
-       add constraint `FK5u2srkdkc7nuwg4hbuxdjxs5n` 
-       foreign key (`spam_id`) 
-       references `spam` (`id`);
+    alter table `sysconfig_spamwords` 
+       add constraint `FK6e5e9a9fukv21tqmsc010s2vw` 
+       foreign key (`sysconfig_id`) 
+       references `sysconfig` (`id`);

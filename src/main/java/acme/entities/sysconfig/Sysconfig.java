@@ -1,5 +1,5 @@
 
-package acme.entities.spam;
+package acme.entities.sysconfig;
 
 import java.util.Collection;
 
@@ -14,7 +14,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Spam extends DomainEntity {
+public class Sysconfig extends DomainEntity {
 
 	// Identificador
 
