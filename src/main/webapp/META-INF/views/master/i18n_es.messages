@@ -59,6 +59,7 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcements = Anuncios
 master.menu.administrator.spam = Spam 
 master.menu.administrator.sysconfig = Configuración del Sistema
+master.menu.administrator.dashboard = Panel de Control
 
 # master.menu.provider ########################################################
 

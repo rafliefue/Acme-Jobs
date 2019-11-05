@@ -61,6 +61,7 @@ master.menu.administrator.shutdown = Shut down
 master.menu.administrator.announcements = Announcements
 master.menu.administrator.spam = Spam 
 master.menu.administrator.sysconfig = System Configuration
+master.menu.administrator.dashboard = Dashboard
 
 # master.menu.provider ########################################################
 
