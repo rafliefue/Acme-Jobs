@@ -11,9 +11,9 @@
 	<acme:form-textbox code="authenticated.challenge.form.label.goalBronze" path="goalBronze"/>
 	<acme:form-textbox code="authenticated.challenge.form.label.goalSilver" path="goalSilver"/>
 	<acme:form-textbox code="authenticated.challenge.form.label.goalGold" path="goalGold"/>
-	<acme:form-textbox code="authenticated.challenge.form.label.rewardBronze" path="rewardBronze"/>
-	<acme:form-textbox code="authenticated.challenge.form.label.rewardSilver" path="rewardSilver"/>
-	<acme:form-textbox code="authenticated.challenge.form.label.rewardGold" path="rewardGold"/>
+	<acme:form-money code="authenticated.challenge.form.label.rewardBronze" path="rewardBronze"/>
+	<acme:form-money code="authenticated.challenge.form.label.rewardSilver" path="rewardSilver"/>
+	<acme:form-money code="authenticated.challenge.form.label.rewardGold" path="rewardGold"/>
 	
 	<acme:form-return code="authenticated.challenge.form.button.return" />	
 </acme:form>

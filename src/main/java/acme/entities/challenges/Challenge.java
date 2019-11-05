@@ -1,13 +1,14 @@
 
 package acme.entities.challenges;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import acme.framework.entities.DomainEntity;
@@ -32,7 +33,6 @@ public class Challenge extends DomainEntity {
 	private Date				moment;
 
 	@Temporal(TemporalType.TIMESTAMP)
-	@Future
 	private Date				deadline;
 
 	@NotBlank
@@ -47,13 +47,13 @@ public class Challenge extends DomainEntity {
 	@NotBlank
 	private String				goalGold;
 
-	@NotBlank
-	private String				rewardBronze;
+	@NotNull
+	private BigDecimal			rewardBronze;
 
-	@NotBlank
-	private String				rewardSilver;
+	@NotNull
+	private BigDecimal			rewardSilver;
 
-	@NotBlank
-	private String				rewardGold;
+	@NotNull
+	private BigDecimal			rewardGold;
 
 }
