@@ -30,18 +30,22 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
-master.menu.anonymous.investor = Registro de inversores
+master.menu.anonymous.investor = Inversores
+master.menu.anonymous.investorrecord = Registro de inversores
 
 # master.menu.anonymous #######################################################
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.announcement = Anuncios
+master.menu.authenticated.investor = Inversores
+master.menu.authenticated.investorrecord = Registro de inversores
 
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+
 
 # master.menu.provider ########################################################
 
