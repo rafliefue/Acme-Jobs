@@ -20,24 +20,45 @@
 	<acme:menu-left>
 		<acme:menu-option code="master.menu.anonymous" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.favourite-link" action="http://www.example.com/"/>
+			<acme:menu-suboption code="master.menu.anonymous.announcements" action="../anonymous/announcement/list"/>
 		</acme:menu-option>
-		<acme:menu-option code="master.menu.anonymous.investor" access="isAnonymous()">
+		
+		<acme:menu-option code="master.menu.anonymous.company">
+			<acme:menu-suboption code="master.menu.anonymous.companyrecords" action="../anonymous/record/list"/>
+		</acme:menu-option>
+    <acme:menu-option code="master.menu.anonymous.investor" access="isAnonymous()">
 			<acme:menu-suboption code="master.menu.anonymous.investorrecord" action="/anonymous/investor/list"/>
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="hasRole('Authenticated')">
 			<acme:menu-suboption code="master.menu.authenticated.announcement" action="../authenticated/announcement/list"/>
-		</acme:menu-option>
-		<acme:menu-option code="master.menu.authenticated.investor" access="hasRole('Authenticated')">
-			<acme:menu-suboption code="master.menu.authenticated.investorrecord" action="/authenticated/investor/list"/>
+			
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.companyrecords" action="../authenticated/record/list"/>
+      
+      <acme:menu-separator/>
+      <acme:menu-suboption code="master.menu.authenticated.investorrecord" action="/authenticated/investor/list"/>
+      
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.challenge" action="../authenticated/challenge/list"/>
+
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.offer" action="../authenticated/offer/list"/>
+      
+      <acme:menu-separator/>
+      <acme:menu-suboption code="master.menu.authenticated.request" action="../authenticated/request/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.announcements" action="/administrator/announcement/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.sysconfig" action="/administrator/sysconfig/list"/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
-		
+
 		<acme:menu-option code="master.menu.provider" access="hasRole('Provider')">
 			<acme:menu-suboption code="master.menu.provider.favourite-link" action="http://www.example.com/"/>
 		</acme:menu-option>
@@ -62,4 +83,3 @@
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
 </acme:menu-bar>
-

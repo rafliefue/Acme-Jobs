@@ -300,11 +300,12 @@ has v</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>175</x>
-      <y>392</y>
+      <y>378</y>
       <w>252</w>
       <h>77</h>
     </coordinates>
-    <panel_attributes>Announcement
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Announcement
 --
 + title: String {NotBlank}
 + moment: Date {Temporal (TIMESTAMP), Past}
@@ -318,7 +319,7 @@ has v</panel_attributes>
       <x>175</x>
       <y>294</y>
       <w>252</w>
-      <h>77</h>
+      <h>70</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Shout
@@ -326,6 +327,63 @@ Shout
 + moment: Date {Temporal (TIMESTAMP), Past}
 + author: String {NotBlank}
 + text: String {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>175</x>
+      <y>469</y>
+      <w>252</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Record
+--
++ companyName: String {NotBlank}
++ sector: String {NotBlank}
++ ceoName: String {NotBlank}
++ activDescription: String {NotBlank}
++ website: String {NotBlank}
++ phone: String {NotBlank}
++ email: String {NotBlank, Email}
++ companyType: String {NotBlank}
++ rating: String {NotBlank, Range(0,5)}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>343</y>
+      <w>231</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Offer
+--
++ title: String {NotBlank}
++ moment: Date {Temporal (TIMESTAMP), Past}
++ deadline: Date {Temporal (TIMESTAMP), Future}
++ text: String {NotBlank}
++ offer: Money {NotNull, Valid}
++ ticker: String {Pattern, Unique, NotBlank}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>469</y>
+      <w>238</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Spam
+--
++ spamwords: String {NotBlank}
++ threshold: String	{NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

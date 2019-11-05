@@ -1,7 +1,11 @@
 
-package acme.features.authenticated.announcements;
+package acme.features.anonymous.announcements;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,14 +13,14 @@ import org.springframework.stereotype.Service;
 import acme.entities.announcements.Announcement;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
-import acme.framework.entities.Authenticated;
+import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedAnnouncementListService implements AbstractListService<Authenticated, Announcement> {
+public class AnonymousAnnouncementListService implements AbstractListService<Anonymous, Announcement> {
 
 	@Autowired
-	AuthenticatedAnnouncementRepository repository;
+	AnonymousAnnouncementRepository repository;
 
 
 	//AbstractListService<Administrator, Announcement> interface
@@ -34,7 +38,11 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 
 		Collection<Announcement> result;
 
-		result = this.repository.findManyAll();
+		LocalDateTime now = LocalDateTime.now();
+		LocalDateTime substracted = now.minus(30, ChronoUnit.DAYS);
+		Date date = Date.from(substracted.atZone(ZoneId.systemDefault()).toInstant());	// Convert from LocalDateTime to Date type
+
+		result = this.repository.findSomeAll(date);
 
 		return result;
 	}

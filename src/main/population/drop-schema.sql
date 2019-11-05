@@ -19,6 +19,10 @@
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
 
+    alter table `sysconfig_spamwords` 
+       drop 
+       foreign key `FK6e5e9a9fukv21tqmsc010s2vw`;
+
     drop table if exists `administrator`;
 
     drop table if exists `announcement`;
@@ -27,9 +31,21 @@
 
     drop table if exists `authenticated`;
 
+    drop table if exists `challenge`;
+
     drop table if exists `consumer`;
 
+    drop table if exists `offer`;
+
     drop table if exists `provider`;
+
+    drop table if exists `record`;
+
+    drop table if exists `request`;
+
+    drop table if exists `sysconfig`;
+
+    drop table if exists `sysconfig_spamwords`;
 
     drop table if exists `user_account`;
 
