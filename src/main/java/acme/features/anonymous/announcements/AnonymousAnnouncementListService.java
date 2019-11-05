@@ -39,7 +39,7 @@ public class AnonymousAnnouncementListService implements AbstractListService<Ano
 		Collection<Announcement> result;
 
 		LocalDateTime now = LocalDateTime.now();
-		LocalDateTime substracted = now.minus(30, ChronoUnit.DAYS);
+		LocalDateTime substracted = now.minus(1, ChronoUnit.MONTHS);
 		Date date = Date.from(substracted.atZone(ZoneId.systemDefault()).toInstant());	// Convert from LocalDateTime to Date type
 
 		result = this.repository.findSomeAll(date);
