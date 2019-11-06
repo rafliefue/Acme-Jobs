@@ -329,7 +329,7 @@ Comprecord
 + ceoName: String {NotBlank, NotNull}
 + activDescription: String {NotBlank, NotNull}
 + website: String {NotBlank, NotNull}
-+ phone: String {NotBlank, NotNull}
++ phone: String {NotBlank, NotNull, Pattern}
 + email: String {NotBlank, NotNull, Email}
 + incorporated: Boolean {NotBlank, NotNull}
 + rating: String {NotBlank, Range(0,5)}</panel_attributes>
