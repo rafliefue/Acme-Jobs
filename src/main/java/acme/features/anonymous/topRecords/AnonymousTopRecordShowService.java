@@ -4,14 +4,14 @@ package acme.features.anonymous.topRecords;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.records.Record;
+import acme.entities.comprecords.Comprecord;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AnonymousTopRecordShowService implements AbstractShowService<Anonymous, Record> {
+public class AnonymousTopRecordShowService implements AbstractShowService<Anonymous, Comprecord> {
 
 	//Internal State
 
@@ -20,17 +20,17 @@ public class AnonymousTopRecordShowService implements AbstractShowService<Anonym
 
 
 	@Override
-	public boolean authorise(final Request<Record> request) {
+	public boolean authorise(final Request<Comprecord> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public Record findOne(final Request<Record> request) {
+	public Comprecord findOne(final Request<Comprecord> request) {
 		assert request != null;
 
-		Record result;
+		Comprecord result;
 		int id;
 
 		id = request.getModel().getInteger("id");
@@ -40,7 +40,7 @@ public class AnonymousTopRecordShowService implements AbstractShowService<Anonym
 	}
 
 	@Override
-	public void unbind(final Request<Record> request, final Record entity, final Model model) {
+	public void unbind(final Request<Comprecord> request, final Comprecord entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
