@@ -1,7 +1,11 @@
 
 package acme.features.authenticated.announcement;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
 import java.util.Collection;
+import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,7 +38,11 @@ public class AuthenticatedAnnouncementListService implements AbstractListService
 
 		Collection<Announcement> result;
 
-		result = this.repository.findManyAll();
+		LocalDateTime now = LocalDateTime.now();
+		LocalDateTime substracted = now.minus(1, ChronoUnit.MONTHS);
+		Date date = Date.from(substracted.atZone(ZoneId.systemDefault()).toInstant());	// Convert from LocalDateTime to Date type
+
+		result = this.repository.findSomeAll(date);
 
 		return result;
 	}

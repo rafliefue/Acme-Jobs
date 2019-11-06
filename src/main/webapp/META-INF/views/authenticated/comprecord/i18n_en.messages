@@ -17,7 +17,7 @@ anonymous.comprecord.form.label.activDescription = Activity Description:
 anonymous.comprecord.form.label.website = Website:
 anonymous.comprecord.form.label.phone = Phone Number:
 anonymous.comprecord.form.label.email = E-mail:
-anonymous.comprecord.form.label.companyType: Company Type:
+anonymous.comprecord.form.label.incorporated: Incorporated:
 anonymous.comprecord.form.label.rating = Rating:
 
 anonymous.comprecord.button.return = Return

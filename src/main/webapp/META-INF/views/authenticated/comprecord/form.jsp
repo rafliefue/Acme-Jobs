@@ -23,7 +23,7 @@
 	<acme:form-url code="anonymous.comprecord.form.label.website" path="website" />
 	<acme:form-textbox code="anonymous.comprecord.form.label.phone" path="phone" />
 	<acme:form-textbox code="anonymous.comprecord.form.label.email" path="email" />
-	<acme:form-textbox code="anonymous.comprecord.form.label.companyType" path="companytype" />
+	<acme:form-textbox code="anonymous.comprecord.form.label.incorporated" path="incorporated" />
 	<acme:form-integer code="anonymous.comprecord.form.label.rating" path="rating" />
 	
   	<acme:form-return code="anonymous.comprecord.button.return"/>

@@ -55,7 +55,7 @@ public class Comprecord extends DomainEntity {
 	private String				email;
 
 	@NotNull
-	private Boolean				companytype;
+	private Boolean				incorporated;
 
 	@Range(min = 0, max = 5)
 	private String				rating;

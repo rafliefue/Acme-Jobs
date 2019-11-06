@@ -43,7 +43,7 @@ master.menu.authenticated.announcement = Announcements
 master.menu.authenticated.challenge = Challenges
 master.menu.authenticated.offer = Offers
 master.menu.authenticated.companyrecords = Company Records
-master.menu.authenticated.investorrecord = Investor Records
+master.menu.authenticated.investorrecords = Investor Records
 master.menu.authenticated.request = Request
 
 # master.menu.anonymous.investor ###############################################

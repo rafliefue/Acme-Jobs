@@ -39,10 +39,23 @@
         `goal_gold` varchar(255),
         `goal_silver` varchar(255),
         `moment` datetime(6),
-        `reward_bronze` varchar(255),
-        `reward_gold` varchar(255),
-        `reward_silver` varchar(255),
+        `reward_bronze_amount` double precision,
+        `reward_bronze_currency` varchar(255),
+        `reward_gold_amount` double precision,
+        `reward_gold_currency` varchar(255),
+        `reward_silver_amount` double precision,
+        `reward_silver_currency` varchar(255),
         `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `credit_card` varchar(255),
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -52,8 +65,8 @@
         `activdescription` varchar(255),
         `ceoname` varchar(255),
         `companyname` varchar(255),
-        `companytype` bit,
         `email` varchar(255),
+        `incorporated` bit,
         `phone` varchar(255),
         `rating` varchar(255),
         `sector` varchar(255),
@@ -77,6 +90,16 @@
         `name` varchar(255),
         `sector` varchar(255),
         `star` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `non_commercial_banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `jingle` varchar(255),
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `targeturl` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 

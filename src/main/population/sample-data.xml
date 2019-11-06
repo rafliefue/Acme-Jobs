@@ -118,7 +118,7 @@
 		<property name="website" value="http://www.example.com"/>
 		<property name="phone" value="+34 (9) 657036241"/>
 		<property name="email" value="pedcobram@alum.us.es"/>
-		<property name="companytype" value="False"/>
+		<property name="incorporated" value="False"/>
 		<property name="rating" value="3"/>
 	</bean>
 	
@@ -130,7 +130,7 @@
 		<property name="website" value="http://www.example.com"/>
 		<property name="phone" value="+9 999 1234567890"/>
 		<property name="email" value="rafliefue@alum.us.es"/>
-		<property name="companytype" value="True"/>
+		<property name="incorporated" value="True"/>
 		<property name="rating" value="5"/>
 	</bean>
   
