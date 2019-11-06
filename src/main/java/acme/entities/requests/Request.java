@@ -35,7 +35,7 @@ public class Request extends DomainEntity {
 
 	@NotBlank
 	@Column(unique = true)
-	@Pattern(regexp = "R\\p{Upper}{4}-[0-9]{5}")
+	@Pattern(regexp = "^R\\p{Upper}{4}-[0-9]{5}$")
 	private String				ticker;
 
 	@NotBlank

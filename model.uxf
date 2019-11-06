@@ -386,7 +386,7 @@ Request
 + deadline: Date {Temporal (TIMESTAMP), Future}
 + text: String {NotBlank}
 + reaward: Money {NotNull, Valid}
-+ ticker: String {Pattern {"R\\p{Upper}{4}-[0-9]{5}"}, Unique, NotBlank}
++ ticker: String {Pattern {"^R\\p{Upper}{4}-[0-9]{5}$"}, Unique, NotBlank}
 </panel_attributes>
     <additional_attributes/>
   </element>
