@@ -29,10 +29,12 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 master.menu.anonymous.announcements = Anuncios
-master.menu.anonymous.investor = Inversores
+master.menu.anonymous.investor = Registros
 master.menu.anonymous.investorrecord = Registro de inversores
+master.menu.anonymous.companyrecords = Archivos de la Compañía
 
-# master.menu.anonymous #######################################################
+
+# master.menu.authenticated #######################################################
 
 master.menu.authenticated = Autentificado
 master.menu.authenticated.announcement = Anuncios
@@ -42,10 +44,6 @@ master.menu.authenticated.companyrecords = Archivos de la Compañía
 master.menu.authenticated.request = Solicitudes
 master.menu.authenticated.investorrecord = Registro de inversores
 
-# master.menu.anonymous.company ###############################################
-
-master.menu.anonymous.company = Compañía
-master.menu.anonymous.companyrecords = Archivos de la Compañía
 
 
 # master.menu.administrator ###################################################
