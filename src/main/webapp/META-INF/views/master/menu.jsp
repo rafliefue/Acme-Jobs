@@ -33,16 +33,13 @@
 			  	<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.challenge" action="../authenticated/challenge/list"/>
         			<acme:menu-separator/>
-			<acme:menu-suboption code="master.menu.authenticated.companyrecords" action="../authenticated/record/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.companyrecords" action="../authenticated/comprecord/list"/>
 			 	<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.investorrecords" action="/authenticated/investor/list"/>
 			 	<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.authenticated.offer" action="../authenticated/offer/list"/>     
         			<acme:menu-separator/>
       		<acme:menu-suboption code="master.menu.authenticated.request" action="../authenticated/request/list"/>     		      		
-		</acme:menu-option>
-		
-		
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
