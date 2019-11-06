@@ -380,7 +380,7 @@ Offer
       <h>63</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
-Spam
+SysConfig
 --
 + spamwords: String {NotBlank}
 + threshold: String	{NotBlank}</panel_attributes>
@@ -391,7 +391,7 @@ Spam
     <coordinates>
       <x>441</x>
       <y>539</y>
-      <w>231</w>
+      <w>315</w>
       <h>105</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;

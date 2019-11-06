@@ -1,11 +1,7 @@
 
 package acme.entities.sysconfig;
 
-import java.util.Collection;
-
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -22,8 +18,7 @@ public class Sysconfig extends DomainEntity {
 
 	// Atributos
 
-	@ElementCollection(fetch = FetchType.EAGER)
-	private Collection<String>	spamwords;
+	private String				spamwords;
 
 	private Double				threshold;
 

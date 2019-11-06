@@ -28,8 +28,11 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.announcements = Anuncios
-master.menu.anonymous.topinvestor = Mejores Registros de Inversores
-master.menu.anonymous.topcompanyrecords = Mejores Archivos de la Compaía
+
+# master.menu.investor #######################################################
+master.menu.anonymous.investor = Registros
+master.menu.anonymous.investorrecord = Registro de inversores
+master.menu.anonymous.companyrecords = Archivos de la Compañía
 
 # master.menu.authenticated #######################################################
 
@@ -41,15 +44,6 @@ master.menu.authenticated.companyrecords = Archivos de la Compañía
 master.menu.authenticated.request = Solicitudes
 master.menu.authenticated.investorrecords = Registros de Inversores
 
-# master.menu.anonymous.company ###############################################
-
-master.menu.anonymous.company = Compañía
-master.menu.anonymous.companyrecords = Archivos de la Compañía
-
-# master.menu.anonymous.investor ###############################################
-
-master.menu.anonymous.investor = Inversores
-master.menu.anonymous.investorrecords = Registros de Inversores
 
 # master.menu.administrator ###################################################
 
@@ -57,7 +51,6 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.announcements = Anuncios
-master.menu.administrator.spam = Spam 
 master.menu.administrator.sysconfig = Configuración del Sistema
 
 # master.menu.provider ########################################################
