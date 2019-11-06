@@ -407,4 +407,27 @@ Investor
 + star: Integer {Min(0), Max(5)}</panel_attributes>
     <additional_attributes/>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>378</y>
+      <w>259</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Challenge
+--
++ title: String {NotBlank}
++ moment: Date {Temporal (TIMESTAMP), Past}
++ deadline: Date {Temporal (TIMESTAMP)}
++ description: String {NotBlank}
++ goalBronce: String {NotBlank}
++ goalSilver: String {NotBlank}
++ goalGold: String {NotBlank}
++ rewardBronce: Money {Valid,NotNull}
++ rewardSilver: Money {Valid,NotNull}
++ rewardGold: Money {Valid,NotNull}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
